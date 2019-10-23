@@ -1,0 +1,180 @@
+<html>
+<head>
+	<style>
+		body {
+			margin: 0 auto;
+			background-image: url(bg.jpeg);
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			font-family: 'Domine', serif;
+			color: #f1ecd5;
+		}
+		h1, h2, h3 {
+			font-family: 'Cinzel Decorative', cursive;
+			opacity: 100%;
+			margin: 0 0 30px 0;
+		}
+		h1 {
+			font-size: 45px;
+		}
+		h2 {
+			font-size: 22px;
+		}
+		p, a {
+			line-height: 1.5;
+			margin-bottom: 60px;
+		}
+		a {
+			font-family: 'Cinzel Decorative', cursive;
+			color: #f1ecd5;
+		}
+		.wrapper {
+			max-width: 960px;
+			margin: 50px auto;
+			padding: 50px;
+			background-color: rgba(0,0,0,0.7);
+		}
+		ul {
+			margin: 40px 0;
+			padding: 0;
+		}
+		ul li {
+			display: inline-block;
+			background-color: #2E4348;
+			color: white;
+			font-weight: 800;
+			list-style-type: none;
+			padding: 8px 12px;
+			cursor: pointer;
+			font-family: 'Cinzel Decorative', cursive;
+			text-transform: uppercase;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		.collapse {
+			display: none;
+		}
+		.show {
+			display: block;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Domine&display=swap" rel="stylesheet">
+	<script>
+		function openInfo(who) {
+			const allEles = document.querySelectorAll('.show');
+
+			for (var i = 0; i < allEles.length; i++) {
+    			allEles[i].classList.remove('show');
+    			allEles[i].classList.add('collapse');
+  			}
+
+			const ele = document.getElementById(who);
+			ele.classList.add('show');
+			ele.classList.remove('collapse');
+		}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Murder at the Manor</h1>
+		<h2>The Boot &amp; Flogger Pub, Borough, London | 31st January 2020 | 7:30pm</h2>
+		<p><a href="https://www.google.com/maps/place/The+Boot+%26+Flogger/@51.5042467,-0.0956224,17z/data=!3m1!4b1!4m5!3m4!1s0x487603580139b089:0x391ec406cfe7bce6!8m2!3d51.5042434!4d-0.0934337">Directions</a></p>
+		<p>You’re invited to Heathcliff Manor, where Lord Heathcliff is hosting a small, intimate dinner party to celebrate his recent marriage. But before anyone can toast his happiness, Lord Heathcliff is killed with the candlestick in the pool room. Join us to solve the murder...</p>
+
+		<ul>
+			<li onclick="openInfo('aimee')">Aimée</li>
+			<li onclick="openInfo('alex')">Alex</li>
+			<li onclick="openInfo('april')">April</li>
+			<li onclick="openInfo('christian')">Christian</li>
+			<li onclick="openInfo('fran')">Fran</li>
+			<li onclick="openInfo('ged')">Ged</li>
+			<li onclick="openInfo('james')">James</li>
+			<li onclick="openInfo('kris')">Kris</li>
+			<li onclick="openInfo('louise')">Louise</li>
+			<li onclick="openInfo('mitchell')">Mitchell</li>
+		</ul>
+
+		<div class="collapse" id="aimee">
+			<h2>Misty Visions</h2>
+			<p>Your psychic powers started when you were a child - you used to see shadowy figures in your room at night, but only when you were asleep. Since then, you’ve worked hard to develop your foresight, using cards to determine the best time of day to make a cup of tea. You regularly consult the spirit world on all matters including what to wear and whether to answer the phone when it rings, and with regular public demonstrations of your powers, you have made quite a reputation for yourself in the village.</p>
+			<h3>Costume Ideas</h3>
+			<p>You’re a free spirit in floaty fabrics, adorned with scarves, belts, bangles and big earrings. You’re often seen listening to unseen forces or reading strangers’ palms.</p>
+			<h3>Introdution Speech</h3>
+			<p>My name is Misty Visions and I am a psychic. I knew that Lord Heathcliff would die today - that’s why I’m here. Well, that and he hired me for the party as a special wedding gift for his new wife. I know that Lord Heathcliff’s sudden, violent death is upsetting which is why I’m offering a half-price tarot consultation with every palm reading I do tonight. Could Death be on the cards for you too?</p>
+		</div>
+		<div class="collapse" id="alex">
+			<h2>Inspector Denaux</h2>
+			<p>You were quickly promoted through the French police force as they wanted to get you off the streets. After tripping over some onions whilst pursuing a caricature artist outside the Centre Pompidou you were retired from active duty with full pay. No matter how many times you ask class="collapse" they will not let you work again so you spend vacations in England posing as a private detective to help those in need. You’ve never fired a gun nor have you ever successfully completed a case.</p>
+			<h3>Costume Ideas</h3>
+			<p>When not in disguise, you blend into the crowd with trilby hat, trench coat and moustache. A newspaper and magnifying glass give you something to hide behind if needed.</p>
+			<h3>Introdution Speech</h3>
+			<p>Inspector Denaux, French detective, at your service. I’m not entirely sure how I became a suspect but clearly there must be a criminal genius in our midst! Lord Heathcliff invited me here to do one thing … and I have briefly forgotten what that was. Nevertheless, there is a murder to be solved and I will do the solving! Firstly someone will need to point me in the direction of the crime scene. People say it was in the pool room but I cannot find it, only a room with a giant snooker table in it.</p>
+		</div>
+		<div class="collapse" id="april">
+			<h2>Emma Fatale</h2>
+			<p>As a young girl, you became obsessed with Barbie. Except you mainly loved the power she had over Ken. Playtime usually consisted of acting out scenarios where Barbie wore a little bikini number and Ken would hand over all his stuff. Little did you realise how well this game would play out in adult life and so, rather than work for a living, you worked the workers instead - and they loved it, the fools! Lord Heathcliff is just the latest in a long line of schmucks you’ve had eating out of your hand - and he won’t be the last.</p>
+			<h3>Costume Ideas</h3>
+			<p>With smouldering eyes, red lips, and a dress that looks like it was poured on, you’re always dressed to kill. A stylish clutch purse completes the look.</p>
+			<h3>Introdution Speech</h3>
+			<p>I’m Em Fatale, Lord Heathcliff’s wife - now a tragically young widow. I used to be an antiques dealer but I gave up my job after our recent wedding so I could focus on being a good wife. Fortunately for me, this place is full of delightful antiques. His Lordship had excellent taste - as is clearly evident from his choice of spouse.</p>
+		</div>
+		<div class="collapse" id="christian">
+			<h2>Professor Peacock</h2>
+			<p>From an early age you wanted to be a writer. At 10 you were writing stories about football, at 15 you were writing stories about girls and football, and at 20 you were writing stories about quantum mechanics and wormholes. Needless to say, as your fiction became more difficult to digest for the masses, any popularity and support you had garnered began to fade away. Feeling your artistic career slip away focused your mind on becoming an English Professor instead, and you’ve been gainfully academically employed ever since.</p>
+			<h3>Costume Ideas</h3>
+			<p>Tweed jacket, leather elbow pads, glasses and an armful of textbooks show you’ve got your academic on. Brown corduroy trousers and last year’s Christmas jumper complete your look.</p>
+			<h3>Introdution Speech</h3>
+			<p>Most of you already know me as Professor Peacock - the renowned academic, and frequent boardsitter of many examination authorities. I suppose you would say I was friends with Lord Heathcliff, in as much as I’d frequently back up his arguments even though they were entirely baseless. In return, I became his confidante in all matters fiscal and academic, but alas not estate planning. Recently I’ve been doing some research into some of you here and it appears that Lord Heathcliff had proper cause for concern.</p>
+		</div>
+		<div class="collapse" id="fran">
+			<h2>Lady Gardiner</h2>
+			<p>You’ve always had green fingers. As a young girl you helped your granny grow tomato plants for sale at car boots, which is also where you first met your husband, Lord Gardiner. He swept you off your feet in the garden centre where you worked and set you up in your own landscape gardening business. More recently you’ve been perfecting the fine art of hedge sculpting - or topiary, as your wealthier clients like to call it.</p>
+			<h3>Costume Ideas</h3>
+			<p>Your floral dress is lovely, but the wellington boots you wear with it spoil the effect a little. Your wide-brimmed hat keeps the sun out of your eyes while you’re working. Gardening gloves and a basket of flowers complete the look.</p>
+			<h3>Introdution Speech</h3>
+			<p>I’m Lady Gardiner, landscape gardener and hedge trimming artist. Lord Heathcliff had commissioned me to carve some angels for the entrance to his maze, but I’m only halfway through so they currently look like bowties on rolling pins. Oh, if anyone trips over an electric chainsaw it’s mine. It also has a temperamental on-off switch. As soon as I heard the terrible news I rushed to tell hubby, Lord Gardiner.</p>
+		</div>
+		<div class="collapse" id="ged">
+			<h2>Buck Shott</h2>
+			<p>You’ve lived in Heathcliff Manor your whole life - well, in the gamekeeper’s cottage that’s part of Lord Heathcliff’s estate. Your father was gamekeeper until that fateful day when he crossed paths with a pack of wild weasels. His death wasn’t quick, and it wasn’t painless, but at least he died doing what he loved.</p>
+			<h3>Costume Ideas</h3>
+			<p>You’re always dressed in a green shirt and tie, with a tweed jacket, flat cap, and rifle to match, with your britches are tucked into knee socks.</p>
+			<h3>Introdution Speech</h3>
+			<p>My name’s Buck Shott and I’m the gamekeeper here at Heathcliff Manor, which means I’m responsible for keeping filthy poachers off my land - I mean, Lord Heathcliff’s land. I also take care of the wee bunnies and pheasants and deer. I love to watch them play in the misty mornings. And when Mammy bakes them up in a pie, aye, they taste good too.</p>
+		</div>
+		<div class="collapse" id="james">
+			<h2>Ned Sadler</h2>
+			<p>Born an orphan, and raised by an eccentric couple that ran Berryam Stables, you’ve been mucking out most of your life. Unfortunately there was so much work to do looking after the horses that your home schooling got a bit behind. Actually, a lot behind. So when Berryam Stables closed and your adoptive parents took to selling iDevices online instead, you packed a rucksack and headed into the big wide world to find more horses. Your first stop was Heathcliff Manor…</p>
+			<h3>Costume Ideas</h3>
+			<p>You wear dark-grey trousers with a white shirt, open at the collar and rolled at the sleeves. Add to this a grey waistcoat, unbuttoned of course, a black cap, and a thin, loosely tied scarf around your neck. It gets chilly in the stables!</p>
+			<h3>Introdution Speech</h3>
+			<p>I’m Ned, the stable boy. I think it was probably those aliens that dunnit. I’m sure I heard a UFO overhead a little while ago. How do you drown in a swimming pool and float at the same time? Life is a wonder. I should have saved him, but I was here, brushing the horses. They don’t like it when their hair’s all tangles.</p>
+		</div>
+		<div class="collapse" id="kris">
+			<h2>Lord Gardiner</h2>
+			<p>Being bestowed a Life Peerage during the Queen’s Birthday Honours list for outstanding achievement in the field of technological retail has always entitled you to draw ‘expenses’. You’d sign in at the House of Lords every day and then partake in a regular 18 holes at Wentworth. That was some twenty years ago now and most have all but forgotten what you actually received the honours for - selling nappies online and by mail order on a same day delivery basis. Now you tend to wear the Lord moniker a little more like it was a hereditary title.</p>
+			<h3>Costume Ideas</h3>
+			<p>Your formal dinner jacket and tie is graced by the rather cumbersome crimson robe with white ermine trim you wear for special occasions. Rather messy hair tops your head, while your half-glasses balance precariously on your ruddy nose.</p>
+			<h3>Introdution Speech</h3>
+			<p>I am the Lord Gardiner of Tunbridge Wells, protector of the common people, House of Lords residing. Lord Heathcliff and I go way back, so I’ll miss beating him at golf every Friday afternoon. If I recall correctly I was applying hot wax seals to some official government documents at the time of the murder in Lord Heathcliff’s sauna room.</p>
+		</div>
+		<div class="collapse" id="louise">
+			<h2>Annette Hittitova</h2>
+			<p>Having a famous Slovakian tennis dad and a British Olympic shot-putting mum meant you’ve never really wanted for money - or energy. Born and bred in the sleepy village of Whitchurch in Bucks, you grew up practising tennis and shot-putting in the back garden acres. You preferred the ‘less strenuous’ activity of tennis, along with the body shape it promised, although your mum has never forgiven you. Tennis has paid for itself hundreds of times over though, and you almost made it to Wimbledon one year. Now you mainly teach.</p>
+			<h3>Costume Ideas</h3>
+			<p>You’re usually seen sporting a little white tennis dress and trainers - unless your dress is in the wash, in which case you opt for leggings, t-shirt and tracksuit jacket. In either case, you’re never without your racquet and a few balls.</p>
+			<h3>Introdution Speech</h3>
+			<p>I’m Lord Heathcliff’s tennis coach, Annette Hititova. I’ve been teaching him for months so I’ll be sad now he’s gone. He’d almost got the hang of how to hold the racquet too. I was in the tanning room when I heard the news. I remember hearing my tears fizzle on the sunbed. Oh well, onwards and upwards. Anyone for tennis after all this ghastly business is out of the way?</p>
+		</div>
+		<div class="collapse" id="mitchell">
+			<h2>Reverend Will Beedone</h2>
+			<p>You felt called to join the clergy at a young age. Although you were raised in a Catholic school you decided that particular variant was a bit limiting and decided that the Church of England was the way to go. When you’re not fundraising and leading services, you enjoy paintball contests, culminating in a hotly contested “Nuns vs Vicars” show-down every year.</p>
+			<h3>Costume Ideas</h3>
+			<p>You pair the traditional black shirt and dog collar with jeans to show you’re hip and trendy. Your thick woollen cardigan keeps the church draughts out and you always have the Good Book to hand - or at least, a good book.</p>
+			<h3>Introdution Speech</h3>
+			<p>I am Reverend Will Beedone. I wasn’t planning to come here today but the Lord works in mysterious ways, much like my Sat Nav. Lord Heathcliff had few friends and many enemies, but I’m sure we can all agree that he’s happy looking down on us, as he always has, from the other side. Sadly, when I arrived he was already dead so I don’t see how I could be a suspect.</p>
+		</div>
+	</div>
+</body>
+</html>
